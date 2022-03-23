@@ -12,6 +12,7 @@ struct ContentView: View {
     @State private var age = Int.self
     @State private var email: String = ""
     @State private var btnAdd: Bool = false
+    @State private var btnSave: Bool = false
     var body: some View {
         VStack {
             VStack {
@@ -21,9 +22,15 @@ struct ContentView: View {
                 TextField("email", text: $email)
             }.padding()
             Spacer()
-            Button("Add") {
-                btnAdd.toggle()
+            HStack {
+                Button("Add") {
+                    btnAdd.toggle()
+                }
+                Button("Save") {
+                    btnSave.toggle()
+                }
             }
+            
         }
     }
 }
