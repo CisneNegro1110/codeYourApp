@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//Comentario X
 struct ContentView: View {
     @State private var name: String = ""
     @State private var age = Int.self
