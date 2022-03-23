@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+//Comentario X
 //Otro Comentario
 struct ContentView: View {
     @State private var name: String = ""
