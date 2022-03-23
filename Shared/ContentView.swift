@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var email: String = ""
     @State private var btnAdd: Bool = false
     @State private var btnSave: Bool = false
+    @State private var btnEdit: Bool = false
     var body: some View {
         VStack {
             VStack {
@@ -28,6 +29,9 @@ struct ContentView: View {
                 }
                 Button("Save") {
                     btnSave.toggle()
+                }
+                Button("Edit") {
+                    btnEdit.toggle()
                 }
             }
             
